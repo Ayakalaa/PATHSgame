@@ -1,15 +1,55 @@
-<html>
-    <head>
-        <title>
-            (Placeholder game name)
-        </title>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>(Placeholder game name)</title>
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-    <body>
-        <h2>
-            (Placeholder game name)
+    h2, a {
+        text-align: center;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    }
 
-            <a href="game/home.html" >Start game</a>
-        <h2>
-    </body>
+    a {
+        text-decoration: none;
+        color: blue;
+    }
+
+    a:hover {
+        opacity: 0.7;
+    }
+</style>
+</head>
+<body>
+
+<h2>(Placeholder game name)</h2>
+
+<a href="game/home.html" onclick="fadeOut(event)">Start game</a>
+
+<script>
+    function fadeOut(event) {
+        event.preventDefault(); // Prevent default link behavior
+
+        var fadeElements = document.querySelectorAll('h2, a');
+
+        fadeElements.forEach(function(element) {
+            element.style.opacity = '0'; // Fade out elements
+        });
+
+        setTimeout(function() {
+            window.location.href = event.target.href; // Navigate to the game page
+        }, 500); // Adjust the delay time to match the transition duration
+    }
+</script>
+
+</body>
 </html>
