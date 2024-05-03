@@ -15,48 +15,48 @@ function nextPart(option) {
         if (currentPage === 'Home') {
             if (option === 'Option 1') {
                 currentPage = 'Page 1';
-                document.getElementById("game-text").textContent = "You chose Option 1. This leads to " + currentPage;
+                document.getElementById("paths-text").textContent = "You chose Option 1. This leads to " + currentPage;
             } else if (option === 'Option 2') {
                 currentPage = 'Page 2';
-                document.getElementById("game-text").textContent = "You chose Option 2. This leads to " + currentPage;
+                document.getElementById("paths-text").textContent = "You chose Option 2. This leads to " + currentPage;
             } else if (option === 'Option 3') {
                 currentPage = 'Page 3';
-                document.getElementById("game-text").textContent = "You chose Option 3. This leads to " + currentPage;
+                document.getElementById("paths-text").textContent = "You chose Option 3. This leads to " + currentPage;
             }
         } else if (currentPage === 'Page 1') {
             if (option === 'Option 1') {
                 currentPage = 'Page 1.1';
-                document.getElementById("game-text").textContent = "You chose Option 1. This leads to " + currentPage;
+                document.getElementById("paths-text").textContent = "You chose Option 1. This leads to " + currentPage;
             } else if (option === 'Option 2') {
                 currentPage = 'Page 1.2';
-                document.getElementById("game-text").textContent = "You chose Option 2. This leads to " + currentPage;
+                document.getElementById("paths-text").textContent = "You chose Option 2. This leads to " + currentPage;
             }
         } else if (currentPage === 'Page 2') {
             if (option === 'Option 1') {
                 currentPage = 'Page 2.1';
-                document.getElementById("game-text").textContent = "You chose Option 1. This leads to " + currentPage;
+                document.getElementById("paths-text").textContent = "You chose Option 1. This leads to " + currentPage;
             } else if (option === 'Option 2') {
                 currentPage = 'Page 2.2';
-                document.getElementById("game-text").textContent = "You chose Option 2. This leads to " + currentPage;
+                document.getElementById("paths-text").textContent = "You chose Option 2. This leads to " + currentPage;
             }
         } else if (currentPage === 'Page 3') {
             if (option === 'Option 1') {
                 currentPage = 'Page 3.1';
-                document.getElementById("game-text").textContent = "You chose Option 1. This leads to " + currentPage;
+                document.getElementById("paths-text").textContent = "You chose Option 1. This leads to " + currentPage;
             } else if (option === 'Option 2') {
                 currentPage = 'Page 3.2';
-                document.getElementById("game-text").textContent = "You chose Option 2. This leads to " + currentPage;
+                document.getElementById("paths-text").textContent = "You chose Option 2. This leads to " + currentPage;
             } else if (option === 'Option 3') {
                 currentPage = 'Page 3.3';
-                document.getElementById("game-text").textContent = "You chose Option 3. This leads to " + currentPage;
+                document.getElementById("paths-text").textContent = "You chose Option 3. This leads to " + currentPage;
             }
         } else if (currentPage === 'Page 3.3') {
             if(option === 'Option 1') {
                 currentPage = 'Page 3.3.1';
-                document.getElementById("game-text").textContent = "You chose this option. So this won't lead to" + currentPage;
+                document.getElementById("paths-text").textContent = "You chose this option. So this won't lead to" + currentPage;
             } else if(option === 'Option 2') {
                 currentPage = 'Page 3.3.2';
-                document.getElementById("game-text").textContent = "You chose AAAAAAA SO A-" + currentPage;
+                document.getElementById("paths-text").textContent = "You chose AAAAAAA SO A-" + currentPage;
                 }
              }  else {
             // Add logic for additional pages if needed
