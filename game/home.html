@@ -20,7 +20,7 @@
 
     #text-container {
         opacity: 1;
-        transition: opacity 0.25s ease;
+        transition: opacity 0.5s ease;
     }
 
     .fade-out {
@@ -36,23 +36,20 @@
         height: 100px;
         margin: 0 10px;
         cursor: pointer;
-        transition: opacity 0.25s ease;
+        transition: opacity 0.5s ease;
     }
 </style>
 </head>
-<body style="background-color:#222222;">
+<body>
 
 <div id="game-container">
     <div id="text-container">
-        <p id="vs">Version: Beta, 0.0-20240503</p>
-        <p id="paths-text">Instructions: Read the text, then click an image as an option to move on</p>
-        <p id="fontmention">This font is called Otaku Rant! ^^</p>
-        <p id="mention">This is still a work in progress, coded by Lexington!</p>
-        <a id="back" href="../index.html">Go back to index page</a>
+        <p id="paths-text">The PATHS text game</p>
     </div>
     <div id="options-container">
-        <img src="option1.jpg" class="option-image" onclick="nextPart('Option 1')">        
-        
+        <img src="option1.jpg" class="option-image" onclick="nextPart('Option 1')">
+        <img src="option2.jpg" class="option-image" onclick="nextPart('Option 2')">
+        <img src="option3.jpg" class="option-image" onclick="nextPart('Option 3')">
     </div>
 </div>
 
