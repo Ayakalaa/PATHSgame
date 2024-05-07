@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'OtakuRant';
-    src: url('fontfiles/OtakuRant/OtakuRant.ttf') format('truetype');
+    font-family: 'OtakuRantRemade';
+    src: url('fontfiles/OtakuRantRemade/OtakuRantRemade.ttf') format('truetype');
 }
 
 body, html {
@@ -10,7 +10,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'OtakuRant' ; /* Apply the font */
+    font-family: 'OtakuRantRemade' ; /* Apply the font */
 }
 
 h2, p, a {
