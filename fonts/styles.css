@@ -13,7 +13,21 @@ body, html {
     font-family: 'OtakuRantRemade' ; /* Apply the font */
 }
 
-h2, p, a {
+h1 {
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    font-size: 20px;
+}
+
+h2 {
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    font-size: 20px;
+}
+
+p {
     text-align: center;
     opacity: 1;
     transition: opacity 0.5s ease;
@@ -22,7 +36,7 @@ h2, p, a {
 
 a {
     text-decoration: none;
-    color: blue;
+    color: green;
 }
 
 a:hover {
