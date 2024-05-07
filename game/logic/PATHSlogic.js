@@ -13,6 +13,8 @@ function nextPart(option) {
     // Simulate loading delay
     setTimeout(function() {
 
+
+
         if (currentPage === '0') {
             if (option === '0S') {
                 currentPage = '0S';
@@ -25,6 +27,7 @@ function nextPart(option) {
             }
         }
         
+
         //This is the beginning page
 
         
@@ -48,6 +51,7 @@ function nextPart(option) {
             }
         } 
         
+
           //This is the beginning page for Path 1 "Missing People"
             
             
@@ -112,7 +116,6 @@ function nextPart(option) {
         } 
 
 
-
          //This is the beginning page for Path 3 "Teacher Issues"
             
             
@@ -130,6 +133,7 @@ function nextPart(option) {
                 }
         }
 
+
         else if (currentPage === 'Path-3.1') {
             if (option === 'Option 1') {
                 currentPage = 'Path-3.3'
@@ -144,10 +148,7 @@ function nextPart(option) {
                 }
         }
             
-            
-        else {
-            // Add logic for additional pages if needed
-        }
+       
 
         // Update options based on the current page
         updateOptions();
@@ -169,6 +170,7 @@ function updateOptions() {
         '0': ['0S'],
         '0S': ['Path-1', 'Option 2', 'Option 3'],
 
+
         //Beginning of Path 1
         'Path-1': ['Option 1', 'Option 2', 'Option 3'],
         'Path-1.1': ['Option 1', 'Option 2'],
@@ -177,19 +179,19 @@ function updateOptions() {
         //Beginning of Path 2
         'Path-2': ['Option 1', 'Option 2', 'Option 3'],
         
+
         //Beginning of Path 3
         'Path-3': ['Option 1', 'Option 2'], 
-        
         'Path-3.1': ['Option 1', 'Option 2'],
 
-        
-        // Add more pages and their corresponding options here, said ChatGPT
     };
 
     var currentPageOptions = options[currentPage];
 
+
     var optionsContainer = document.getElementById("options-container");
     optionsContainer.innerHTML = ""; // Clear existing options
+
 
     if (currentPageOptions) {
         currentPageOptions.forEach(function(optionText) {
@@ -203,6 +205,7 @@ function updateOptions() {
         });
     }
 }
+
 
 // Call updateOptions when the page loads
 window.onload = updateOptions;
